@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------------
 
 # set the path of where the input files are
-mywd = "C:/Users/Nick Morris/Downloads/Data-Science/Eilif"
+mywd = "C:/ ... /Eilif"
 
 # open up a graphics window
 windows()
@@ -838,11 +838,11 @@ types(dat)
 # check out the data
 dat
 
-# remove the commas from potential_fv, ï..id, annual_inc, revol_bal, total_rev_hi_lim, avg_cur_bal
-# relabel ï..id as id
+# remove the commas from potential_fv, Ã¯..id, annual_inc, revol_bal, total_rev_hi_lim, avg_cur_bal
+# relabel Ã¯..id as id
 dat[, potential_fv := as.numeric(gsub(",", "", potential_fv))]
-dat[, id := as.numeric(gsub(",", "", ï..id))]
-dat[, ï..id := NULL]
+dat[, id := as.numeric(gsub(",", "", Ã¯..id))]
+dat[, Ã¯..id := NULL]
 dat[, annual_inc := as.numeric(gsub(",", "", annual_inc))]
 dat[, revol_bal := as.numeric(gsub(",", "", revol_bal))]
 dat[, total_rev_hi_lim := as.numeric(gsub(",", "", total_rev_hi_lim))]
